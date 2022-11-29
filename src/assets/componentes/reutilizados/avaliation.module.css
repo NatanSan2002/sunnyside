@@ -1,0 +1,43 @@
+.container{
+padding:24px 1%;
+text-align: center;
+}
+
+.container .func{
+    font-family: 'Barlow', sans-serif;
+    color: hsl(213, 9%, 48%);
+    font-size: 15px;
+}
+
+.container h6{
+text-align: center;
+font-family: 'Fraunces', serif;
+font-weight: 700;
+font-size: 1.1rem;
+margin-bottom: 4%;
+}
+
+.container > img{
+width: 20%;
+border-radius: 50%;
+
+
+}
+
+.container > img,.texto{
+margin-bottom:18%;
+font-family:'Barlow', sans-serif;
+font-size: 1.0rem;
+line-height: 1.7rem;
+color:hsl(213, 9%, 39%);
+}
+
+.small{
+    width: 31.4%;
+}
+
+@media(max-width:900px){
+    .container{
+        padding:24px 0;
+    }
+}

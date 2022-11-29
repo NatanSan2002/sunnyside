@@ -1,0 +1,138 @@
+.container{
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.container > div {
+width: 60%;
+
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: space-between;
+align-items: flex-start;
+
+}
+
+.container > div p,h6{
+margin: 15px 0;
+text-align: left;
+
+
+}
+
+.container > div p{
+font-family:'Barlow', sans-serif;
+color:  hsl(213, 9%, 39%);
+}
+
+
+
+
+.container img {
+width: 100%;
+}
+
+.container .dual {
+width:100%;
+position: relative;
+}
+
+.container .dual .center {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,29%);  /*Tentar colocar a imagem como position absolute e centralizada, e o texto colocar margin em baixo. Assim quebra muito facil quando a tela é diminuida */
+text-align: center;
+}
+
+.container .dual > .center h6{
+    text-align: center;
+}
+
+.container h6{
+font-size: 2.1em;
+}
+
+
+
+.container .more, .container h6{
+font-family: 'Fraunces', serif;
+font-weight: 700;
+color: hsl(212, 27%, 19%);
+}
+
+.container .effect{
+position: relative;
+}
+.container .effect > div {
+    width: 120%;
+    height: 10px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,0);
+    opacity: 0.6;
+    z-index: -1;
+    border-radius: 40px;
+}
+
+.container .effect > .yellow{
+background: yellow;
+}
+
+
+
+.container .effect:hover > .yellow  {
+opacity: 1.0;
+background: rgb(250, 183, 0);
+}
+
+.container .effect > .red{
+    background:rgb(250, 55, 21);
+    }
+    
+    
+    
+    .container .effect:hover > .red {
+    opacity: 1.0;
+    background:red;
+    }
+    
+
+
+@media(max-width:768px){
+.container{
+width: 100%;
+}
+.container > div {
+    width: 80%;
+}
+
+.container > .text {
+padding: 22% 0;
+}
+}
+
+@media(max-width:580px){
+    .container .dual .center p{
+    font-size: 0.8rem;
+    }
+
+    .container .dual .center h6{
+        font-size: 1.6rem;
+        }
+        .container .dual .center{
+    transform: translate(-50%,-16%);
+    width: 88%;
+        }
+}
+
+@media(max-width:432px){
+    .container > .text {
+        padding: 15% 0;
+        }
+}
+

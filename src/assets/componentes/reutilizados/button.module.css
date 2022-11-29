@@ -1,0 +1,19 @@
+@import url("../../../index.css");
+
+.button{
+    border: none;
+    color: white;
+    background: rgba(245, 245, 245, 0.267);
+    padding: 14px 19px;
+    border-radius: 50px;
+    cursor: pointer;
+    
+    font-family:'Fraunces', serif;
+    font-size: 0.7rem;
+
+}
+
+.button:hover{
+    background: rgba(245, 245, 245, 0.377);
+    transition-duration: 0.4s;
+}

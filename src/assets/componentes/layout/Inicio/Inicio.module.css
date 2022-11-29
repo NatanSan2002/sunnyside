@@ -1,0 +1,48 @@
+.container{
+    position: relative;
+    color: white;
+}
+
+.container a {
+color:white;
+}
+
+.container > div {
+    width: 100%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-184px);
+}
+
+.container > div > img{
+    width: 89px;
+    position: absolute;
+    top: 128%;
+    left: 50%;
+    transform: translate(-50%,67%);
+    filter: invert(100%) sepia(100%) saturate(0%) brightness(149%) contrast(107%);
+}
+
+.container  img,source {
+width: 100%;
+z-index: -1;
+}
+
+
+
+.container h1{
+font-family: 'Fraunces', serif;
+font-weight: 700;
+font-size:2.8rem;
+letter-spacing: 5px;
+
+}
+
+@media(max-width:1040px){
+    .container > div { top: 61%}
+    .container > div > img{
+        transform: translate(-50%,8%)
+    }
+    }
+

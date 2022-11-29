@@ -1,0 +1,10 @@
+.container > img {
+width: 25%;
+}
+
+
+@media(max-width:900px){
+.container > img {
+        width: 50%;
+        }
+}

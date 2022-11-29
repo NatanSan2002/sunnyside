@@ -1,0 +1,78 @@
+.container{
+padding: 10% 0;
+}
+
+
+
+.container > div {
+margin: 0 auto;
+width: 90%;
+padding: 3% 2%;
+
+
+}
+
+
+.container .arrowC{
+justify-content: center;
+height: auto;
+margin-top:5%;
+}
+
+
+
+.container .arrowLeft{
+transform: rotate(180deg);
+}
+
+.container .arrowLeft:hover{
+    animation: move_arrow_Left 0.8s infinite ;
+    }
+
+.container .arrowRight:hover{
+animation: move_arrow_Right  0.8s infinite ;
+}
+
+
+@keyframes move_arrow_Right{
+from{transform: translate(0px, 0);}
+to{transform: translate(20px, 0);}
+}
+
+@keyframes move_arrow_Left{
+    from{transform: translate(0px, 0) rotate(180deg);}
+    to{transform: translate(-20px, 0) rotate(180deg);}
+    }
+
+.container .arrowC > img{
+width: 65px;
+margin: 0 2%;
+cursor: pointer;
+}
+
+.container > div > div {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.container > div > div::-webkit-scrollbar{
+display: none;
+}
+
+.container > div > div > div {
+flex: none;
+}
+
+@media(max-width:900px){
+
+
+        .container > div > div >div {
+            width: 100%;
+            }
+
+        
+}
